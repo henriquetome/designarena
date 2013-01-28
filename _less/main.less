@@ -1,9 +1,22 @@
+/*VARIABLES*/
 @basecolor: #626262;
 @gray-bgcolor: #404040;
 @orange-color: #ff8500;
 @white-color: #FFF;
 @black-color: #181818;
 
+/*MIXINS*/
+.linkmain() { 
+	font-size: 13px;
+	color: @white-color;
+	transition: all 0.2s ease 0s; -webkit-transition: all 0.2s ease 0s;
+	&:hover {
+		color: @orange-color;
+		transition: all 0.2s ease 0s; -webkit-transition: all 0.2s ease 0s;
+	}
+}
+
+/*MAIN*/
 body { background: @gray-bgcolor; font-family: 'avantgarde_md_btmedium'; letter-spacing: 0.08em; }
 header { 
 	width: 100%; 
@@ -26,13 +39,7 @@ header {
 				float: left;
 				margin-left: 20px;
 				a {
-					font-size: 13px;
-					color: @white-color;
-					transition: all 0.2s ease 0s; -webkit-transition: all 0.2s ease 0s;
-				}
-				a:hover {
-					color: @orange-color;
-					transition: all 0.2s ease 0s; -webkit-transition: all 0.2s ease 0s;
+					.linkmain
 				}
 			}
 		}
@@ -66,13 +73,6 @@ p {
 	}
 }
 
-section#home {
-	width: 100%;
-	height: 860px;
-	background: url(../images/bg_home.jpg);
-	box-shadow: 0px 3px 5px rgba(0,0,0,0.5); -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
-}
-
 .content {
 	display: table;
 	width: 988px;
@@ -91,7 +91,41 @@ section#home {
 	}
 }
 
+section#home {
+	width: 100%;
+	height: 860px;
+	background: url(../images/bg_home.jpg);
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.5); -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
+}
+
 section#portfolio {
 	width: 100%;
 	height: 800px;
+}
+
+#floatingMenu { 
+	position: absolute; 
+	right: 20px; 
+	width: 320px;
+
+	#drop-nav { 
+		background: url(../images/bg_base.gif) @basecolor;
+		padding: 15px;
+
+		border-radius: 5px; -moz-border-radius: 5px;
+		box-shadow: 0 3px 5px rgba(0,0,0,0.5); -moz-box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+	}
+
+	ul {
+		display: table;
+
+		li { 
+			float: left;
+			margin-right: 20px;
+
+			a {
+				.linkmain
+			}
+		}
+	}
 }

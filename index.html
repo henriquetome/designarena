@@ -8,6 +8,8 @@
 
 <title>DESIGNARENA - Desenvolvimento Criativo</title>
 
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+
 <link rel="stylesheet" href="css/font/stylesheet.css" media="all" />
 <link rel="stylesheet" href="css/reset.css" media="all" />
 <link rel="stylesheet" href="css/main.css" media="all" />
@@ -15,6 +17,17 @@
 </head>
 
 <body>
+
+<div id="floatingMenu">
+	<nav id="drop-nav">
+		<ul>
+			<li><a href="#">home</a></li>
+			<li><a href="#">portfólio</a></li>
+			<li><a href="#">clientes</a></li>
+			<li><a href="#">contato</a></li>
+		</ul>
+	</nav>
+</div>
 
 <header>
 
@@ -63,5 +76,9 @@
 
 </section><!--portfolio-->
 
+<script src="js/functions.js"></script>
+<script type="text/javascript">
+	MENU.init();
+</script>
 </body>
 </html>
