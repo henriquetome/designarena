@@ -13,6 +13,24 @@ var MENU = {
 				var windowHeight = $(window).height();
 				var menuBox = $("#drop-nav");
 
+				var homeHeight = $("#home").height();
+				var portHeight = $("#portfolio").height() + homeHeight;
+				var clienttHeight = $("#clientes").height() + portHeight;
+
+				if (scrollTop >= 0){
+					$('.selected').removeClass("selected");
+					$('.home').addClass("selected");
+				}if (scrollTop >= homeHeight){
+					$('.selected').removeClass("selected");
+					$('.portfolio').addClass("selected");
+				}if (scrollTop >= portHeight){
+					$('.selected').removeClass("selected");
+					$('.clientes').addClass("selected");
+				}if (scrollTop >= clienttHeight){
+					$('.selected').removeClass("selected");
+					$('.contato').addClass("selected");
+				}
+
 				if (scrollTop > 200 && parseInt(menuBox.css("margin-top")) != "13") {
 
 					menuBox.css("margin-top", "13px");
@@ -27,3 +45,9 @@ var MENU = {
 		});
 	}
 };
+
+$(document).ready(function(){
+    $('a.main-btn').smoothScroll({
+        afterScroll: function() {}
+    });
+});

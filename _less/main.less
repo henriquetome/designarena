@@ -5,6 +5,9 @@
 @white-color: #FFF;
 @black-color: #181818;
 
+@img-sprite: url('../images/sprite.png');
+@box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
+
 /*MIXINS*/
 .linkmain() { 
 	font-size: 13px;
@@ -22,6 +25,7 @@ header {
 	width: 100%; 
 	height: 155px; 
 	position: relative;
+	z-index: 11;
 	background: url(../images/bg_base.gif) @basecolor; 
 	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
 
@@ -94,19 +98,42 @@ p {
 section#home {
 	width: 100%;
 	height: 860px;
-	background: url(../images/bg_home.jpg);
-	box-shadow: 0px 3px 5px rgba(0,0,0,0.5); -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
+	background: url(../images/bg_home.jpg) fixed;
+	box-shadow: @box-shadow; -moz-box-shadow: @box-shadow;
+	position: relative;
+	z-index: 9;
 }
 
 section#portfolio {
 	width: 100%;
 	height: 800px;
+	background: url(../images/bg_portfolio.jpg) fixed;
+	box-shadow: @box-shadow; -moz-box-shadow: @box-shadow;
+	position: relative;
+	z-index: 8;
+}
+
+section#clientes {
+	width: 100%;
+	height: 800px;
+	box-shadow: @box-shadow; -moz-box-shadow: @box-shadow;
+	position: relative;
+	z-index: 7;
+}
+
+section#contato {
+	width: 100%;
+	height: 800px;
+	box-shadow: @box-shadow; -moz-box-shadow: @box-shadow;
+	position: relative;
+	z-index: 6;
 }
 
 #floatingMenu { 
 	position: absolute; 
 	right: 20px; 
-	width: 320px;
+	width: 567px;
+	z-index: 10;
 
 	#drop-nav { 
 		background: url(../images/bg_base.gif) @basecolor;
@@ -122,10 +149,77 @@ section#portfolio {
 		li { 
 			float: left;
 			margin-right: 20px;
+			line-height: 1em;
+			padding-top: 13px;
+
+			&:first-child {
+				padding: 0;
+				margin-right: 50px;
+			}
+
+			&:last-child {
+				margin: 0;
+			}
+
+			&:nth-child(5) {
+				margin-right: 10px;
+			}
 
 			a {
 				.linkmain
 			}
 		}
 	}
+}
+
+a.min-btn {
+	width: 23px;
+	height: 23px;
+	display: block;
+	background-image: @img-sprite;
+	background-repeat: no-repeat;
+}
+
+#social {
+	position: absolute;
+	right: 30px;
+	top: 10px;
+
+	li {
+		float: left;
+		margin-right: 10px;
+
+		&:last-child {
+			margin:0;
+		}
+	}
+}
+
+.twitter {
+	background-position: 0 0;
+
+	&:hover {
+		opacity: 0.5;
+	}
+}
+
+.facebook {
+	background-position: -23px 0;
+
+	&:hover {
+		opacity: 0.5;
+	}
+}
+
+ul#works li {
+	width: 232px;
+	height: 213px;
+	background: #2b2b2b;
+	float: left;
+	box-shadow: inset 3px 3px 5px rgba(0,0,0,0.5);
+	margin: 5px 10px 10px 5px;
+}
+
+.selected { 
+	color: @orange-color !important; 
 }

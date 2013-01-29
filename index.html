@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="pr-br">
+<html lang="br">
 
 <head>
 
@@ -19,28 +19,35 @@
 <body>
 
 <div id="floatingMenu">
-	<nav id="drop-nav">
-		<ul>
-			<li><a href="#">home</a></li>
-			<li><a href="#">portfólio</a></li>
-			<li><a href="#">clientes</a></li>
-			<li><a href="#">contato</a></li>
-		</ul>
-	</nav>
+	<ul id="drop-nav">
+		<li><a class="main-btn home" href="#top"><img src="images/min_logo.png" alt="" /></a></li>
+		<li><a class="main-btn portfolio" href="#portfolio">portfólio</a></li>
+		<li><a class="main-btn clientes" href="#clientes">clientes</a></li>
+		<li><a class="main-btn contato" href="#contato">contato</a></li>
+		<li><a href="#" class="min-btn twitter" title="twitter"></a></li>
+		<li><a href="#" class="min-btn facebook" title="facebook"></a></li>
+	</ul>
+
 </div>
+
+<div id="top"></div>
 
 <header>
 
-	<img class="logo" src="images/logo.png" alt="" />
+	<img class="logo" src="images/logo.png" alt="Logotipo" />
 
 	<nav>
 		<ul>
-			<li><a href="#">home</a></li>
-			<li><a href="#">portfólio</a></li>
-			<li><a href="#">clientes</a></li>
-			<li><a href="#">contato</a></li>
+			<li><a class="main-btn" href="#portfolio">portfólio</a></li>
+			<li><a class="main-btn" href="#clientes">clientes</a></li>
+			<li><a class="main-btn" href="#contato">contato</a></li>
 		</ul>
 	</nav>
+
+	<ul id="social">
+		<li><a href="#" class="min-btn twitter" title="twitter"></a></li>
+		<li><a href="#" class="min-btn facebook" title="facebook"></a></li>
+	</ul>
 
 </header>
 
@@ -60,6 +67,7 @@
 
 		<div class="col-right">
 			<h2>DEMOREEL 2012</h2>
+			<img src="images/ex_88123995.jpg" alt="" style="margin-top: 35px;" />
 		</div><!--col-right-->
 
 	</div><!--content-->
@@ -72,13 +80,41 @@
 
 		<h1>PORTFÓLIO</h1>
 
+		<ul id="works">
+			
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+
+		</ul>
+
 	</div><!--content-->
 
 </section><!--portfolio-->
 
+<section id="clientes">
+	
+	asd
+
+</section>
+
+<section id="contato">
+	
+	asd
+
+</section>
+
 <script src="js/functions.js"></script>
+<script src="js/jquery.smooth-scroll.js"></script>
+<script type="text/javascript" src="js/jquery.smooth-scroll.js"></script>
 <script type="text/javascript">
 	MENU.init();
 </script>
+
 </body>
 </html>
