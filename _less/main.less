@@ -99,7 +99,8 @@ p {
 
 section#home {
 	width: 100%;
-	height: 860px;
+	height: auto;
+	padding-bottom: 100px;
 	background: url(../images/bg_home.jpg) fixed;
 	box-shadow: @box-shadow; -moz-box-shadow: @box-shadow;
 	position: relative;
@@ -108,7 +109,8 @@ section#home {
 
 section#portfolio {
 	width: 100%;
-	height: 800px;
+	height: auto;
+	padding-bottom: 100px;
 	background: url(../images/bg_portfolio.jpg) fixed;
 	box-shadow: @box-shadow; -moz-box-shadow: @box-shadow;
 	position: relative;
@@ -117,7 +119,8 @@ section#portfolio {
 
 section#clientes {
 	width: 100%;
-	height: 800px;
+	height: auto;
+	padding-bottom: 100px;
 	box-shadow: @box-shadow; -moz-box-shadow: @box-shadow;
 	position: relative;
 	z-index: 7;
@@ -125,8 +128,8 @@ section#clientes {
 
 section#contato {
 	width: 100%;
-	height: 800px;
-	box-shadow: @box-shadow; -moz-box-shadow: @box-shadow;
+	height: auto;
+	padding-bottom: 100px;
 	position: relative;
 	z-index: 6;
 }
@@ -213,13 +216,54 @@ a.min-btn {
 	}
 }
 
-ul#works li {
-	width: 232px;
-	height: 213px;
-	background: #2b2b2b;
-	float: left;
-	box-shadow: inset 3px 3px 5px rgba(0,0,0,0.5);
-	margin: 5px 10px 10px 5px;
+ul#works {
+
+	li {
+		width: 232px;
+		height: 213px;
+		position: relative;
+		overflow: hidden;
+		background: #2b2b2b;
+		float: left;
+		box-shadow: inset 3px 3px 5px rgba(0,0,0,0.5);
+		margin: 5px 10px 10px 5px;
+
+		a {
+			width: 80px;
+			padding-top: 35px;
+			display: block;
+			background: url('../images/on.jpg') no-repeat 18px 0;
+			text-decoration: none;
+			color: #cf6c00;
+			position: absolute;
+			top: 75px;
+			right: 65px;
+		}
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.name-port {
+			color: @white-color;
+			position: absolute;
+			bottom: 25px;
+			left: 10px;
+			font-size: 15px;
+			font-weight: bold;
+		}
+
+		.type-port {
+			font-weight: bold;
+			position: absolute;
+			bottom: 5px;
+			left: 10px;
+			text-shadow:1px 1px 0 rgba(255,255,255,0.1);
+			color: #111;
+		}
+	}
 }
 
 .selected { 
@@ -271,5 +315,22 @@ form#contact-form {
 		&:hover {
 			opacity: 0.8;
 		}
+	}
+}
+
+.other-contact {
+	margin-top: 30px;
+}
+
+footer { 
+	text-align: center;
+	background: @black-color;
+	height: 120px;
+
+	p {
+		color: @basecolor;
+		padding-top: 60px;
+		font-weight: normal;
+		font-size: 12px;
 	}
 }
