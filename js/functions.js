@@ -83,9 +83,14 @@ $(function() {
 
 //SLIDE PORTFÓLIO
 $(function(){
-	$("ul#works li").hover(function(){
+	$(".slide").hover(function(){
 		$('img', this).animate({top: "213px"}, {queue:false, duration:400});
 	}, function(){
 		$('img', this).animate({top: "0"}, {queue:false, duration:400})
+	});
+
+	$('#slides').slides({
+		preload: true,
+		generateNextPrev: true
 	});
 });
