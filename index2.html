@@ -16,6 +16,54 @@
 <link rel="stylesheet" href="css/reset.css" media="all" />
 <link rel="stylesheet" href="css/main.css" media="all" />
 
+<style>
+		/*
+			Load CSS before JavaScript
+		*/
+		
+		/*
+			Slides container
+			Important:
+			Set the width of your slides container
+			Set to display none, prevents content flash
+		*/
+		.slides_container {
+			width:470px;
+			display:none;
+		}
+
+		/*
+			Each slide
+			Important:
+			Set the width of your slides
+			If height not specified height will be set by the slide content
+			Set to display block
+		*/
+		.slides_container div {
+			width:470px;
+			height:170px;
+			display:block;
+		}
+		
+		/*
+			Optional:
+			Reset list default style
+		*/
+		.pagination {
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+
+		/*
+			Optional:
+			Show the current slide in the pagination
+		*/
+		.pagination .current a {
+			color:red;
+		}
+	</style>
+
 </head>
 
 <body>
@@ -135,6 +183,7 @@
 						<img src="images/port/geottec.jpg" alt="" />
 					</div>
 				</li>
+
 				<li>
 					<div class="slide">
 						<a href="http://www.casadaempada.com.br/meioambiente/" target="_blank">acessar</a>
@@ -150,7 +199,7 @@
 					</div>
 				</li>
 
-			</ul><!--slides_container-->
+			</ul>
 		</div><!--slides-->
 
 	</div><!--content-->
@@ -190,23 +239,28 @@
 			<article id="slides-testimony">
 
 				<ul class="slides_container">
+
 					<li>
 						<div class="slide">
-							<p>Lorem ipsum dolor iti salimeni dolor lorrem davi constumes sab sanches em tamarim com suussa de koa e mel assim para aliim sair de la constume de kajer de la solitudine.</p>
+							<p>Lorem ipsum dolor isit na mesma direção que o futuro anda, assim anda a arena. Isso é bom por 2 pois, um é o crescimento sustentável e melhorias na taxa de desemprego no Brasil e dois é o fato dos seus clientes sairem do mercado de trabalho muito satisfeito e dispóstos a pagar por esse tipo de serviço. Obrigado a ARENA.</p>
 
-							<p>Fulano de tal</p>
-							<div class="clients">CASA DA EMPADA</div>
+							<p>FULANA DE TAL</p>
+							<div class="clients">REPORTEC</div>
 						</div>
-					</li>
-					<li>
 						<div class="slide">
-							<p>Lorem ipsum dolor iti salimeni dolor lorrem davi constumes sab sanches em tamarim com suussa de koa e mel assim para aliim sair de la constume de kajer de la solitudine.</p>
+							<p>Lorem ipsum dolor isit na mesma direção que o futuro anda, assim anda a arena. Isso é bom por 2 pois, um é o crescimento sustentável e melhorias na taxa de desemprego no Brasil e dois é o fato dos seus clientes sairem do mercado de trabalho muito satisfeito e dispóstos a pagar por esse tipo de serviço. Obrigado a ARENA.</p>
 
-							<p>Fulano de tal</p>
-							<div class="clients">CASA DA EMPADA</div>
+							<p>FULANA DE TAL</p>
+							<div class="clients">REPORTEC</div>
 						</div>
-					</li>
-				</ul><!--slides_container-->
+						<div class="slide">
+							<p>Lorem ipsum dolor isit na mesma direção que o futuro anda, assim anda a arena. Isso é bom por 2 pois, um é o crescimento sustentável e melhorias na taxa de desemprego no Brasil e dois é o fato dos seus clientes sairem do mercado de trabalho muito satisfeito e dispóstos a pagar por esse tipo de serviço. Obrigado a ARENA.</p>
+
+							<p>FULANA DE TAL</p>
+							<div class="clients">REPORTEC</div>
+						</div>
+
+				</ul>
 
 			</article><!--testimony-->
 

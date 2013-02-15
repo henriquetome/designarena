@@ -93,4 +93,10 @@ $(function(){
 		preload: true,
 		generateNextPrev: true
 	});
+
+	$('#slides-testimony').slides({
+		preload: true,
+		generateNextPrev: true
+	});
+
 });

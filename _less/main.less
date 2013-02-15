@@ -6,7 +6,8 @@
 @black-color: #181818;
 
 @img-sprite: url('../images/sprite.png');
-@box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
+@box-shadow: 0px 3px 5px rgba(0,0,0, .5);
+@chamfer: 1px 1px 0 rgba(255,255,255, .2);
 
 /*MIXINS*/
 .linkmain() { 
@@ -20,6 +21,7 @@
 }
 
 /*MAIN*/
+
 body { background: @gray-bgcolor; font-family: 'avantgarde_md_btmedium'; letter-spacing: 0.08em; }
 header { 
 	width: 100%; 
@@ -27,7 +29,7 @@ header {
 	position: relative;
 	z-index: 11;
 	background: url(../images/bg_base.gif) @basecolor; 
-	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+	box-shadow: 0 3px 5px rgba(0,0,0, .5);
 
 	.logo { 
 		margin: 30px 0 0 20px;
@@ -58,12 +60,15 @@ h1 {
 
 	span {
 		color: @black-color;
+		text-shadow: @chamfer;
 	}
 }
 h2 {
 	font-size: 31px;
+	text-transform: uppercase;
 	color: @black-color;
-	margin: 15px 0;
+	margin: 15px 0 50px 0;
+	text-shadow: @chamfer;
 }
 
 p {
@@ -145,7 +150,7 @@ section#contato {
 		padding: 15px;
 
 		border-radius: 5px; -moz-border-radius: 5px;
-		box-shadow: 0 3px 5px rgba(0,0,0,0.5); -moz-box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+		box-shadow: 0 3px 5px rgba(0,0,0, .5); -moz-box-shadow: 0 3px 5px rgba(0,0,0, .5);
 	}
 
 	ul {
@@ -232,7 +237,7 @@ ul.slides_container {
 			overflow: hidden;
 			background: #2b2b2b;
 			float: left;
-			box-shadow: inset 3px 3px 5px rgba(0,0,0,0.5);
+			box-shadow: inset 3px 3px 5px rgba(0,0,0, .5);
 			margin: 5px 10px 10px 5px;
 
 			a {
@@ -267,14 +272,14 @@ ul.slides_container {
 				position: absolute;
 				bottom: 5px;
 				left: 10px;
-				text-shadow:1px 1px 0 rgba(255,255,255,0.1);
+				text-shadow:1px 1px 0 rgba(255,255,255, .1);
 				color: #111;
 			}
 		}
 	}
 }
 
-#slides {
+#slides, #slides-testimony {
 	position: relative;
 
 	.pagination {
@@ -369,5 +374,29 @@ footer {
 		padding-top: 60px;
 		font-weight: normal;
 		font-size: 12px;
+	}
+}
+
+#slides-testimony {
+	padding: 0 10px 0 40px;
+	background: url(../images/aspas.jpg) no-repeat;
+
+	.slides_container {
+		width: auto;
+
+		li {
+			width:430px;
+
+			.slide {
+				width: auto;
+				background: none;
+				box-shadow: none;
+			}
+		}
+	}
+
+	.clients  {
+		color: @orange-color;
+		margin-top: -13px;
 	}
 }
