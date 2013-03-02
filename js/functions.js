@@ -6,34 +6,40 @@ var MENU = {
 
 		$(function () {
 
-			$("#drop-nav").css("position", "fixed");
+			$("#drop-nav").css('position', 'fixed');
 
 			$(window).scroll(function (e) {
 
 				var scrollTop = $(window).scrollTop();
 				var windowHeight = $(window).height();
+				var middleY = windowHeight / 3;
+
 				var menuBox = $("#drop-nav");
 				var homeHeight = $("#home").height();
 				var portHeight = $("#portfolio").height() + homeHeight;
-				var clienttHeight = $("#clientes").height() + portHeight;
+				var teamHeight = $("#equipe").height() + portHeight;
+				var clientHeight = $("#clientes").height() + teamHeight;
 
 				if (scrollTop >= 0){
 					$('.selected').removeClass("selected");
 					$('.home').addClass("selected");
-				}if (scrollTop >= homeHeight){
+				}if (scrollTop >= homeHeight - middleY){
 					$('.selected').removeClass("selected");
 					$('.portfolio').addClass("selected");
-				}if (scrollTop >= portHeight){
+				}if (scrollTop >= portHeight - middleY){
+					$('.selected').removeClass("selected");
+					$('.equipe').addClass("selected");
+				}if (scrollTop >= teamHeight - middleY){
 					$('.selected').removeClass("selected");
 					$('.clientes').addClass("selected");
-				}if (scrollTop >= clienttHeight){
+				}if (scrollTop >= clientHeight - middleY){
 					$('.selected').removeClass("selected");
 					$('.contato').addClass("selected");
 				}
 
 				if (scrollTop > 200 && parseInt(menuBox.css("margin-top")) != "13") {
 					menuBox.css("margin-top", "13px");
-				} else if (scrollTop > 100 && scrollTop < 200) {
+				} else if (scrollTop > 50 && scrollTop < 200) {
 					var perc = 1 - ((scrollTop - 100) / 100);
 					menuBox.css('margin-top', parseInt((13 - (93 * perc))));
 				}

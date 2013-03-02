@@ -62,7 +62,6 @@ p {
   font-weight: bold;
   font-size: 15px;
   padding-bottom: 15px;
-  text-align: justify;
   line-height: 1.3em;
 }
 p mark {
@@ -74,7 +73,7 @@ p mark {
   display: table;
   width: 988px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding: 100px 0;
 }
 .content .col-center {
   width: 100%;
@@ -94,43 +93,55 @@ p mark {
 section#home {
   width: 100%;
   height: auto;
-  padding-bottom: 100px;
-  background: url(../images/bg_home.jpg) fixed;
+  display: block;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
   position: relative;
+  background: url(../images/bg_home.jpg) fixed;
   z-index: 9;
 }
 section#portfolio {
   width: 100%;
   height: auto;
-  padding-bottom: 100px;
-  background: url(../images/bg_portfolio.jpg) fixed;
+  display: block;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
   position: relative;
+  background: url(../images/bg_portfolio.jpg) fixed;
   z-index: 8;
 }
-section#clientes {
+section#equipe {
   width: 100%;
   height: auto;
-  padding-bottom: 100px;
+  display: block;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 7;
 }
+section#clientes {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 6;
+}
 section#contato {
   width: 100%;
   height: auto;
-  padding-bottom: 100px;
+  display: block;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
   position: relative;
-  z-index: 6;
+  box-shadow: none;
+  z-index: 5;
 }
 #floatingMenu {
   position: absolute;
   right: 20px;
-  width: 567px;
+  width: 635px;
   z-index: 10;
 }
 #floatingMenu #drop-nav {
@@ -157,7 +168,7 @@ section#contato {
 #floatingMenu ul li:last-child {
   margin: 0;
 }
-#floatingMenu ul li:nth-child(5) {
+#floatingMenu ul li:nth-child(6) {
   margin-right: 10px;
 }
 #floatingMenu ul li a {
