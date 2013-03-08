@@ -41,10 +41,14 @@
 }
 
 .white-gradient (@from: #FFF, @to: #ccc) {
+	background-image: linear-gradient(top, @from, @to);
+	background-image: -webkit-linear-gradient(top, @from, @to);
 	background-image: -moz-linear-gradient(top, @from, @to);
 }
 
 .orange-gradient (@from: #f2932a, @to: #bf6116) {
+	background-image: linear-gradient(top, @from, @to);
+	background-image: -webkit-linear-gradient(top, @from, @to);
 	background-image: -moz-linear-gradient(top, @from, @to);
 }
 
@@ -465,6 +469,7 @@ ul#team {
 				color: @orange-color;
 				font-size: 100px;
 				float: left;
+				margin-top: -35px;
 			}
 
 			h1 {

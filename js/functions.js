@@ -111,7 +111,7 @@ $(function(){
 $(function(){
 
 	var objClass = {
-		"display": "inline", 
+		"display": "block", 
 		"opacity": "1"
 	};
 
@@ -125,28 +125,28 @@ $(function(){
 	$("li.step-1").click(function(){
 		$("#info-slides .current").animate({opacity: "0"}, 500, function(){
 			$("#info-slides .current").removeClass("current").css("display", "none");
-			$("#info-slides .step-one").css("display", "inline").animate({opacity: "1"}, 500).addClass("current");
+			$("#info-slides .step-one").css("display", "block").animate({opacity: "1"}, 500).addClass("current");
 		});
 	});
 
 	$("li.step-2").click(function(){
 		$("#info-slides .current").animate({opacity: "0"}, 500, function(){
 			$("#info-slides .current").removeClass("current").css("display", "none");
-			$("#info-slides .step-twoo").css("display", "inline").animate({opacity: "1"}, 500).addClass("current");
+			$("#info-slides .step-twoo").css("display", "block").animate({opacity: "1"}, 500).addClass("current");
 		});
 	});
 
 	$("li.step-3").click(function(){
 		$("#info-slides .current").animate({opacity: "0"}, 500, function(){
 			$("#info-slides .current").removeClass("current").css("display", "none");
-			$("#info-slides .step-three").css("display", "inline").animate({opacity: "1"}, 500).addClass("current");
+			$("#info-slides .step-three").css("display", "block").animate({opacity: "1"}, 500).addClass("current");
 		});
 	});
 
 	$("li.step-4").click(function(){
 		$("#info-slides .current").animate({opacity: "0"}, 500, function(){
 			$("#info-slides .current").removeClass("current").css("display", "none");
-			$("#info-slides .step-four").css("display", "inline").animate({opacity: "1"}, 500).addClass("current");
+			$("#info-slides .step-four").css("display", "block").animate({opacity: "1"}, 500).addClass("current");
 		});
 	});
 });
