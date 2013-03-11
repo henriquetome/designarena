@@ -68,8 +68,8 @@ $.smoothScroll = function(options, px) {
     scrollTop: scrollTargetOffset + opts.offset
   }, 
   {
-    duration: opts.speed,
-    easing: opts.easing, 
+    duration: 1000,
+    easing: 'easeInOutExpo',
     complete: function() {
       if ( opts.afterScroll && $.isFunction(opts.afterScroll) ) {
         opts.afterScroll.call(opts.link, opts);
