@@ -8,6 +8,8 @@ var MENU = {
 
 			$("#drop-nav").css('position', 'fixed');
 
+			
+
 			$(window).scroll(function (e) {
 
 				var scrollTop = $(window).scrollTop();
@@ -23,18 +25,23 @@ var MENU = {
 				if (scrollTop >= 0){
 					$('.selected').removeClass("selected");
 					$('.home').addClass("selected");
+					var pageTitle = "Home";
 				}if (scrollTop >= homeHeight - middleY){
 					$('.selected').removeClass("selected");
 					$('.portfolio').addClass("selected");
+					var pageTitle = "Portfólio";
 				}if (scrollTop >= portHeight - middleY){
 					$('.selected').removeClass("selected");
 					$('.equipe').addClass("selected");
+					var pageTitle = "Equipe";
 				}if (scrollTop >= teamHeight - middleY){
 					$('.selected').removeClass("selected");
 					$('.clientes').addClass("selected");
+					var pageTitle = "Clientes";
 				}if (scrollTop >= clientHeight - middleY){
 					$('.selected').removeClass("selected");
 					$('.contato').addClass("selected");
+					var pageTitle = "Contato";
 				}
 
 				if (scrollTop > 200 && parseInt(menuBox.css("margin-top")) != "13") {
@@ -43,6 +50,8 @@ var MENU = {
 					var perc = 1 - ((scrollTop - 100) / 100);
 					menuBox.css('margin-top', parseInt((13 - (93 * perc))));
 				}
+
+				$('title').html(pageTitle + " - DESIGNARENA - A sua ideia é a nossa briga");
 			});
 		});
 	}
