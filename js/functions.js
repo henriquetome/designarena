@@ -51,7 +51,7 @@ var MENU = {
 					menuBox.css('margin-top', parseInt((13 - (93 * perc))));
 				}
 
-				$('title').html(pageTitle + " - DESIGNARENA - A sua ideia é a nossa briga");
+				$('title').html(pageTitle + " - DESIGNARENA");
 			});
 		});
 	}
