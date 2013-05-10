@@ -210,6 +210,15 @@ section#contato {
 			a {
 				.linkmain
 			}
+
+			.home {
+				width: 204px;
+				height: 45px;
+				display: block;
+				overflow: hidden;
+				text-indent: -99em;
+				background: @img-sprite no-repeat -65px 0px;
+			}
 		}
 	}
 }
@@ -324,7 +333,7 @@ ul.slides_container {
 		position: absolute;
 		top: -52px;
 		right: 57px;
-		background: url('../images/arrows.jpg') no-repeat;
+		background: @img-sprite no-repeat;
 		display: block;
 		float: left;
 
@@ -333,8 +342,12 @@ ul.slides_container {
 		}
 	}
 
+	a.prev {
+		background-position: -302px -4px;
+	}
+
 	a.next {
-		background-position: -42px 0;
+		background-position: -341px -4px;
 		margin-left: 10px;
 		right: 10px;
 	}
