@@ -336,12 +336,14 @@
 
 		<div class="col-right">
 
-			<form id="contact-form">
-				<input type="text" name="nome" placeholder="Nome" />
+			<form id="contact-form" method="post" action="mail.php">
+
+				<input type="text" name="name" placeholder="Nome" />
 				<input type="text" name="mail" placeholder="E-mail" />
-				<input type="text" name="fone" placeholder="Telefone" />
-				<textarea name="message" placeholder="Mensagem"></textarea>
+				<input type="text" name="phone" placeholder="Telefone" />
+				<textarea name="comment" placeholder="Mensagem"></textarea>
 				<input type="submit" value="Enviar" />
+
 			</form>
 
 		</div><!--col-right-->
