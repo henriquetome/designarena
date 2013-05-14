@@ -235,7 +235,7 @@
 			<li>
 				<img src="images/team/thiago.jpg" alt="Thiago Penido" />
 				<p>THIAGO PENIDO</p>
-				<div class="career">PROGRAMADOR</div>
+				<div class="career">DESENVOLVEDOR</div>
 			</li>
 			<li>
 				<img src="images/team/henrique.jpg" alt="Henrique Tomé" />
