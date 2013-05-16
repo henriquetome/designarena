@@ -327,21 +327,20 @@
 
 			<p>Envie sua ideia e nós entraremos com o nosso time para mais uma vitória garantida.</p>
 
-			<div class="other-contact">
-				<p>contato@designarena.com.br</p>
-				<p>(21) 2465 2236 | (21) 9245 3066</p>
-			</div>
+			<p>Os campos que contem o caractere <mark>*</mark> são considerados obrigatórios.</p>
+
+			<p>Agradecemos sua visita!</p>
 
 		</div><!--col-let-->
 
 		<div class="col-right">
 
-			<form id="contact-form" method="post" action="mail.php">
+			<form id="contact-form" autocomplete="off" method="post" action="mail.php">
 
-				<input type="text" name="name" placeholder="Nome" />
-				<input type="text" name="mail" placeholder="E-mail" />
+				<input type="text" name="name" placeholder="Nome *" class="required" />
+				<input type="text" name="mail" placeholder="E-mail *" class="required email" />
 				<input type="text" name="phone" placeholder="Telefone" />
-				<textarea name="comment" placeholder="Mensagem"></textarea>
+				<textarea name="comment" placeholder="Mensagem *" class="required"></textarea>
 				<input type="submit" value="Enviar" />
 
 			</form>
@@ -357,9 +356,8 @@
 	<p>Copyright @ Todos os direitos reservados.</p>
 
 </footer>
-
-<!--<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script> -->
-<script src="js/jquery.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="js/jquery.validate.js"></script>
 <script src="js/functions.js"></script>
 <script src="js/jquery.smooth-scroll.js"></script>
 <script src="js/slides.min.jquery.js"></script>

@@ -2,6 +2,7 @@
 @basecolor: #626262;
 @gray-bgcolor: #404040;
 @orange-color: #ff8500;
+@orange-rgb: 255,133,0;
 @white-color: #FFF;
 @black-color: #181818;
 
@@ -379,6 +380,7 @@ form#contact-form {
 	margin-top: 100px;
 
 	input[type="text"], input[type="email"], textarea {
+		.ease-obj;
 		background: #2b2b2b;
 		font-weight: bold;
 		color: #606060;
@@ -387,6 +389,16 @@ form#contact-form {
 		padding: 12px;
 		border: 0;
 		margin-bottom: 10px;
+	}
+
+	label {
+		.ease-obj;
+		margin-bottom: 8px;
+		display: block;
+	}
+
+	input.error, textarea.error {
+		box-shadow: 0 0 3px rgba(255,133,0,1) !important;
 	}
 
 	textarea {
@@ -602,3 +614,5 @@ ul#team {
 		}
 	}
 }
+
+.error { color: #FF8500; }
