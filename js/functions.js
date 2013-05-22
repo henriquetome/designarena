@@ -132,3 +132,23 @@ $(function(){
 		});
 	});
 });
+
+//FILTER PORTFÓLIO
+
+$(document).ready(function(){
+
+	$('.all').click(function(){
+		$('ul li').addClass('show');
+	});
+
+	$('.web').click(function(){
+		$('li[class!=web]').removeClass('show');
+		$('li[class=web]').addClass('show');
+	});
+
+	$('.3d').click(function(){
+		$('li[class!=3d]').removeClass('show');
+		$('li[class=3d]').addClass('show');
+	});
+
+});
