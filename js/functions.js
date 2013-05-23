@@ -134,21 +134,42 @@ $(function(){
 });
 
 //FILTER PORTFÓLIO
+$(document).ready(init);
 
-$(document).ready(function(){
-
-	$('.all').click(function(){
-		$('ul li').addClass('show');
+function init() {
+	var things = $('#case');
+	var filters = {};
+	
+	things.isotope({
+		itemSelector : '.thing'
 	});
+	
+	$('.filter a[data-filter-value=""]').addClass('focus');
 
-	$('.web').click(function(){
-		$('li[class!=web]').removeClass('show');
-		$('li[class=web]').addClass('show');
-	});
+	$('.filter a').click(
+		function(e){
+			e.preventDefault();
+			var clicked_filter = $(this);
 
-	$('.3d').click(function(){
-		$('li[class!=3d]').removeClass('show');
-		$('li[class=3d]').addClass('show');
-	});
+			if ( clicked_filter.hasClass('focus') ) {
+				return;
+			}
+			var optionSet = clicked_filter.parents('.option-set');
 
-});
+			optionSet.find('.focus').removeClass('focus');
+			clicked_filter.addClass('focus');
+
+			var group = optionSet.attr('data-filter-group');
+			filters[ group ] = clicked_filter.attr('data-filter-value');
+
+			var filters_to_use = [];
+			for ( var group in filters ) {
+				filters_to_use.push( filters[ group ] )
+			}
+
+			var selector = filters_to_use.join('');
+
+			things.isotope({ filter: selector });
+		}
+	);
+}
