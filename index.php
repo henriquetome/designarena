@@ -5,6 +5,15 @@
 <head>
 
 <meta charset="utf-8" />
+<meta name="description" content="DESIGNARENA - Sua ideia é a nossa briga - Arena de artistas digitais." />
+<meta name="keywords" content="arena, design, designarena, website, web, site, design grafic, web design, application, software, art, portfolio, marketing, programming, ecommerce, layout" />
+<!-- Open Graph Source -->
+<meta property="og:title" content="DESIGNARENA" />
+<meta property="og:site_name" content="DESIGNARENA" />	
+<meta property="og:description" content="DESIGNARENA - Sua ideia é a nossa briga - Arena de artistas digitais." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.designarena.com.br/" />
+<meta property="og:image" content="http://www.e-soluttions.com.br/website/logo_fb.jpg" />
 
 <title>Home - DESIGNARENA</title>
 
@@ -169,14 +178,6 @@
 			</li>
 			<li class="thing web">
 				<div class="slide">
-					<a href="http://www.geottec.eng.br/" target="_blank">acessar</a>
-					<div class="name-port">Geottec</div>
-					<div class="type-port">WEBSITE</div>
-					<img src="images/port/thumb/geottec.jpg" alt="" />
-				</div>
-			</li>
-			<li class="thing web">
-				<div class="slide">
 					<a href="http://denaer.com/" target="_blank">acessar</a>
 					<div class="name-port">DENAER</div>
 					<div class="type-port">WEBSITE</div>
@@ -185,7 +186,7 @@
 			</li>
 			<li class="thing ilu">
 				<div class="slide">
-					<a href="images/port/elvis.jpg" rel="lightbox">acessar</a>
+					<a href="images/port/illustration/elvis.jpg" rel="lightbox">acessar</a>
 					<div class="name-port">Elvis Training</div>
 					<div class="type-port">Ilustração 2D</div>
 					<img src="images/port/thumb/elvis.jpg" alt="" />
@@ -199,6 +200,14 @@
 					<img src="images/port/thumb/apimenta.jpg" alt="" />
 				</div>
 			</li>
+			<li class="thing ilu">
+				<div class="slide">
+					<a href="images/port/illustration/mike.jpg" rel="lightbox">acessar</a>
+					<div class="name-port">Mike Wazowski</div>
+					<div class="type-port">Ilustração 2D</div>
+					<img src="images/port/thumb/mike.jpg" alt="" />
+				</div>
+			</li>
 			<li class="thing web">
 				<div class="slide">
 					<a href="http://slhospitalar.com.br/loja/" target="_blank">acessar</a>
@@ -209,18 +218,10 @@
 			</li>
 			<li class="thing ilu">
 				<div class="slide">
-					<a href="images/port/elvis.jpg" rel="lightbox">acessar</a>
-					<div class="name-port">Elvis Training</div>
+					<a href="images/port/illustration/familia_unidos.jpg" rel="lightbox">acessar</a>
+					<div class="name-port">Família Unidos</div>
 					<div class="type-port">Ilustração 2D</div>
-					<img src="images/port/thumb/elvis.jpg" alt="" />
-				</div>
-			</li>
-			<li class="thing ilu">
-				<div class="slide">
-					<a href="images/port/elvis.jpg" rel="lightbox">acessar</a>
-					<div class="name-port">Elvis Training</div>
-					<div class="type-port">Ilustração 2D</div>
-					<img src="images/port/thumb/elvis.jpg" alt="" />
+					<img src="images/port/thumb/familia_unidos.jpg" alt="" />
 				</div>
 			</li>
 
