@@ -6,14 +6,15 @@
 
 <meta charset="utf-8" />
 <meta name="description" content="DESIGNARENA - Sua ideia é a nossa briga - Arena de artistas digitais." />
-<meta name="keywords" content="arena, design, designarena, website, web, site, design grafic, web design, application, software, art, portfolio, marketing, programming, ecommerce, layout" />
+<meta name="keywords" content="arena, design, designarena, website, web, site, design graphic, web design, application, software, art, portfolio, marketing, programming, ecommerce, layout" />
+<meta name="author" content="DESIGNARENA" />
 <!-- Open Graph Source -->
 <meta property="og:title" content="DESIGNARENA" />
 <meta property="og:site_name" content="DESIGNARENA" />	
 <meta property="og:description" content="DESIGNARENA - Sua ideia é a nossa briga - Arena de artistas digitais." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.designarena.com.br/" />
-<meta property="og:image" content="http://www.e-soluttions.com.br/website/logo_fb.jpg" />
+<meta property="og:image" content="http://www.e-soluttions.com.br/website/designarena_logo_fb.jpg" />
 
 <title>Home - DESIGNARENA</title>
 
