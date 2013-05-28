@@ -6,7 +6,8 @@
 
 <meta charset="utf-8" />
 <meta name="description" content="DESIGNARENA - Sua ideia é a nossa briga - Arena de artistas digitais." />
-<meta name="keywords" content="arena, design, designarena, website, web, site, design grafic, web design, application, software, art, portfolio, marketing, programming, ecommerce, layout" />
+<meta name="keywords" content="arena, design, designarena, website, web, site, design graphic, web design, application, software, art, portfolio, marketing, programming, ecommerce, layout" />
+<meta name="author" content="DESIGNARENA" />
 <!-- Open Graph Source -->
 <meta property="og:title" content="DESIGNARENA" />
 <meta property="og:site_name" content="DESIGNARENA" />	
