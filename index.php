@@ -224,6 +224,14 @@
 					<img src="images/port/thumb/familia_unidos.jpg" alt="" />
 				</div>
 			</li>
+			<li class="thing ilu">
+				<div class="slide">
+					<a href="images/port/illustration/rino_apocalipse.jpg" rel="lightbox">acessar</a>
+					<div class="name-port">RINO</div>
+					<div class="type-port">Ilustração 2D</div>
+					<img src="images/port/thumb/rino_apocalipse.jpg" alt="" />
+				</div>
+			</li>
 
 		</ul><!--slides_container-->
 
