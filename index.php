@@ -71,7 +71,7 @@
 		<div class="col-left">
 			<h1>NOSSA <span>ARENA</span></h1>
 
-			<p>O nosso campo de trabalho é o mercado publicitário, nosso oponente é o desafio e o troféu dessa disputa é a satisfação dos nossos clientes. Estamos preparados para brigar por você em busca de um objetivo em comum, conquistar nosso público alvo.</p>
+			<p>O nosso campo de batalha é o mercado, nosso oponente é o desafio e o troféu dessa disputa é a satisfação dos nossos clientes. Estamos preparados para brigar por você em busca de um objetivo em comum, conquistar nosso público alvo.</p>
 
 			<p>A <mark>DESIGNARENA</mark> é uma agência jovem, porém com uma gigante capacidade de desenvolvimento criativo e formação de ideias inteligentes e ágeis.</p>
 
@@ -80,7 +80,7 @@
 
 		<div class="col-right">
 			<h2>DEMOREEL 2012</h2>
-			<img src="images/ex_88123995.jpg" alt="" />
+			<iframe src="http://player.vimeo.com/video/69668947" width="467" height="306" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 		</div><!--col-right-->
 
 		<div class="col-center">
