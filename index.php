@@ -38,8 +38,8 @@
 		<li><a class="main-btn equipe" href="#equipe">equipe</a></li>
 		<li><a class="main-btn clientes" href="#clientes">clientes</a></li>
 		<li><a class="main-btn contato" href="#contato">contato</a></li>
-		<li><a href="#" class="min-btn twitter" title="twitter"></a></li>
-		<li><a href="#" class="min-btn facebook" title="facebook"></a></li>
+		<li><a href="#" class="min-btn twitter" title="twitter" target="_blank"></a></li>
+		<li><a href="https://www.facebook.com/pages/DesignArena/412267875526011" class="min-btn facebook" title="facebook" target="_blank"></a></li>
 	</ul>
 
 </div>
@@ -58,8 +58,8 @@
 	</nav>
 
 	<ul id="social">
-		<li><a href="#" class="min-btn twitter" title="twitter"></a></li>
-		<li><a href="#" class="min-btn facebook" title="facebook"></a></li>
+		<li><a href="#" class="min-btn twitter" title="twitter" target="_blank"></a></li>
+		<li><a href="https://www.facebook.com/pages/DesignArena/412267875526011" class="min-btn facebook" title="facebook" target="_blank"></a></li>
 	</ul>
 
 </header>
@@ -71,7 +71,7 @@
 		<div class="col-left">
 			<h1>NOSSA <span>ARENA</span></h1>
 
-			<p>O nosso campo de batalha é o mercado, nosso oponente é o desafio e o troféu dessa disputa é a satisfação dos nossos clientes. Estamos preparados para brigar por você em busca de um objetivo em comum, conquistar nosso público alvo.</p>
+			<p>O nosso campo de batalha é o mercado, nosso oponente é o desafio e o troféu dessa disputa é a satisfação dos nossos clientes. Estamos preparados para brigar por você em busca de um objetivo em comum, conquistar nosso alvo.</p>
 
 			<p>A <mark>DESIGNARENA</mark> é uma agência jovem, porém com uma gigante capacidade de desenvolvimento criativo e formação de ideias inteligentes e ágeis.</p>
 
@@ -79,8 +79,8 @@
 		</div><!--col-left-->
 
 		<div class="col-right">
-			<h2>DEMOREEL 2012</h2>
-			<iframe src="http://player.vimeo.com/video/69668947" width="467" height="306" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			<h2>DEMOREEL 2013</h2>
+			<iframe src="http://player.vimeo.com/video/69668947?title=0&amp;byline=0&amp;portrait=0" width="467" height="306" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 		</div><!--col-right-->
 
 		<div class="col-center">
@@ -246,7 +246,7 @@
 
 		<h1>Equipe</h1>
 
-		<p>Um time multidiciplinar de jovens e renomados guerreiros com anos de atuação no mercado e muita experiência, trazendo uma bagagem enorme de ideias inovadoras e inteligentes, compõe a equipe da <mark>ARENA</mark>.</p>
+		<p>Um time multidisciplinar de jovens e renomados guerreiros com anos de atuação no mercado e muita experiência, trazendo uma bagagem enorme de ideias inovadoras e inteligentes, compõe a equipe da <mark>ARENA</mark>.</p>
 
 		<ul id="team">
 			<li>
