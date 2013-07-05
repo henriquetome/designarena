@@ -38,7 +38,7 @@
 		<li><a class="main-btn equipe" href="#equipe">equipe</a></li>
 		<li><a class="main-btn clientes" href="#clientes">clientes</a></li>
 		<li><a class="main-btn contato" href="#contato">contato</a></li>
-		<li><a href="#" class="min-btn twitter" title="twitter" target="_blank"></a></li>
+		<li><a href="https://twitter.com/DesignArena_ag" class="min-btn twitter" title="twitter" target="_blank"></a></li>
 		<li><a href="https://www.facebook.com/pages/DesignArena/412267875526011" class="min-btn facebook" title="facebook" target="_blank"></a></li>
 	</ul>
 
@@ -58,7 +58,7 @@
 	</nav>
 
 	<ul id="social">
-		<li><a href="#" class="min-btn twitter" title="twitter" target="_blank"></a></li>
+		<li><a href="https://twitter.com/DesignArena_ag" class="min-btn twitter" title="twitter" target="_blank"></a></li>
 		<li><a href="https://www.facebook.com/pages/DesignArena/412267875526011" class="min-btn facebook" title="facebook" target="_blank"></a></li>
 	</ul>
 
