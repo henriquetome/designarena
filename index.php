@@ -14,7 +14,7 @@
 <meta property="og:description" content="DESIGNARENA - Sua ideia é a nossa briga - Arena de artistas digitais." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.designarena.com.br/" />
-<meta property="og:image" content="http://www.designarena.com/designarena_logo_fb.jpg" />
+<meta property="og:image" content="http://www.designarena.com.br/designarena_logo_fb.jpg" />
 
 <title>Home - DESIGNARENA</title>
 
