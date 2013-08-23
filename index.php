@@ -370,7 +370,7 @@
 
 <footer>
 	
-	<p>Copyright @ Todos os direitos reservados.</p>
+	<p>DESIGNARENA © 2013 - Todos os direitos reservados.</p>
 
 </footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
